@@ -15,25 +15,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <p class="test">TRANZY API DATA FETCHER</p>
+    <p class="test m-t-10">TRANZY API [JSON] DATA FETCHER</p>
     <div class="container">
       <div class="api-key-ui">
         <div class="api-key-e-holder">
           <p class="p-text">API_KEY FROM TRANZY.AI</p>
           <input
-            type="text"
+            type="password"
             id="input-api-key"
             placeholder="YOUR API_KEY HERE"
           />
+          <div class="func-status">
+            <a class="p-text" id="check-api-key">CHECK API KEY()</a>
+            <p class="p-text" id="status-key">STATUS</p>
+          </div>
         </div>
       </div>
 
       <div class="select-ui">
         <div class="select-e-holder">
           <p class="p-text">SELECT AN AGENCY</p>
-          <select class="select-agency" id="select-agency">
-            <option>Choose an agency</option>
-          </select>
+          <select class="select-agency" id="select-agency"></select>
+          <a class="p-text" id="generate-data"></a>
         </div>
       </div>
 
@@ -41,7 +44,7 @@
         <div class="download-files-e-holder">
           <p class="p-text">DOWNLOAD FILES</p>
 
-          <div class="e">
+          <div class="e-r">
             <div class="e-holder">
               <ul>
                 <li class="p-text">FETCH VEHICLES</li>
@@ -91,7 +94,7 @@
             </div>
           </div>
 
-          <div class="e">
+          <div class="e-r">
             <div class="e-holder">
               <ul>
                 <li class="p-text">FETCH STOP TIMES</li>
