@@ -2,8 +2,122 @@
 <html lang="en">
   <head>
     <title>Tranzy Data Fetcher</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Tranzy JSON Data Fetcher" />
+    <meta
+      name="keywords"
+      content="tranzy, json, data, fetch, fetcher, zeusdata"
+    />
+    <meta name="author" content="Zeus Data" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <p class="test">TRANZY API DATA FETCHER</p>
+    <div class="container">
+      <div class="api-key-ui">
+        <div class="api-key-e-holder">
+          <p class="p-text">API_KEY FROM TRANZY.AI</p>
+          <input
+            type="text"
+            id="input-api-key"
+            placeholder="YOUR API_KEY HERE"
+          />
+        </div>
+      </div>
+
+      <div class="select-ui">
+        <div class="select-e-holder">
+          <p class="p-text">SELECT AN AGENCY</p>
+          <select class="select-agency" id="select-agency">
+            <option>Choose an agency</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="download-files-ui">
+        <div class="download-files-e-holder">
+          <p class="p-text">DOWNLOAD FILES</p>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH VEHICLES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH ROUTES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH TRIPS</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH SHAPES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH STOPS</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+            </div>
+          </div>
+
+          <div class="e">
+            <div class="e-holder">
+              <ul>
+                <li class="p-text">FETCH STOP TIMES</li>
+                <li class="p-text-json">JSON FILE</li>
+              </ul>
+              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="save-ui">
+        <div class="save-e-holder">
+          <p class="p-text">SAVE ALL FILES AS .ZIP</p>
+          <a class="btn-save">SAVE_ALL_FILES.ZIP</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-text">
+        TranzyDataFetcher v0.1.0 -
+        <a href="CHANGELOG.md" target="_blank">CHANGELOG</a>. project by
+        <a href="https://zeusdata.dev" target="_blank">ZEUSDATA.DEV</a>
+      </p>
+    </footer>
     <script type="module" src="main.js"></script>
   </body>
 </html>
