@@ -26,6 +26,7 @@ Download public data from Tranzy.ai as JSON file
 3. Run a local server (recommended)
 
 ## Project structure
+```text
 /assets
     fonts
     icons
@@ -53,7 +54,7 @@ faq.html
 favicon.png
 index.html
 main.js
-
+```
 ## Tech Stack
 - Vanilla JavaScript
 - Fetch API
