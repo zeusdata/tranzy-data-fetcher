@@ -1,4 +1,4 @@
-#Tranzy [JSON] Data Fetcher
+# Tranzy [JSON] Data Fetcher
 
 Download public data from Tranzy.ai as JSON file
 
@@ -6,7 +6,7 @@ Download public data from Tranzy.ai as JSON file
 
 ![App Preview](assets/preview.png)
 
-##Features
+## Features
 
 - API Key validation
 - Dynamic agency selection
@@ -14,18 +14,18 @@ Download public data from Tranzy.ai as JSON file
 - Minimal UI
 
 
-##How it works
+## How it works
 1. Enter your API key
 2. Select an available agency
 3. Choose an endpoint (vehicles, routes, trips, shapes, stops, stop times);
 4. Download the data as JSON
 
-##Getting started
+## Getting started
 1. Clone the repository
 2. Open the project folder
 3. Run a local server (recommended)
 
-##Project structure
+## Project structure
 /assets
     fonts
     icons
