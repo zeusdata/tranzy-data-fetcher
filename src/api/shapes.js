@@ -20,6 +20,7 @@ export async function fetchShapes(endpoint) {
     downloadShapes.addEventListener("click", function () {
       createLink();
     });
+    return data;
   } catch (error) {
     console.error(error);
   }

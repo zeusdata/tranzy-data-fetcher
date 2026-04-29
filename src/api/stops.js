@@ -20,6 +20,7 @@ export async function fetchStops(endpoint) {
     downloadStops.addEventListener("click", function () {
       createLink();
     });
+    return data;
   } catch (error) {
     console.error(error);
   }

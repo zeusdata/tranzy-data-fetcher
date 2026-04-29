@@ -20,6 +20,7 @@ export async function fetchStopTimes(endpoint) {
     downloadStopTimes.addEventListener("click", function () {
       createLink();
     });
+    return data;
   } catch (error) {
     console.error(error);
   }

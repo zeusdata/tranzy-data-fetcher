@@ -138,10 +138,13 @@
         </div>
       </div>
 
-      <div class="save-ui">
+      <div class="save-ui" id="save-ui">
         <div class="save-e-holder">
-          <p class="p-text">SAVE ALL FILES AS .ZIP</p>
-          <a class="btn-save">SAVE_ALL_FILES.ZIP</a>
+          <div class="func-status">
+            <p class="p-text">SAVE ALL FILES AS .ZIP</p>
+            <p class="p-text" id="status-zip"></p>
+          </div>
+          <a class="btn-save" id="btn-save">SAVE_ALL_FILES.ZIP</a>
         </div>
       </div>
     </div>
@@ -158,6 +161,7 @@
         <a href="https://zeusdata.dev" target="_blank">ZEUSDATA.DEV</a>
       </p>
     </footer>
+    <script src="src/jszip/jszip.js"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>

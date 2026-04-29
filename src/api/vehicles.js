@@ -21,6 +21,7 @@ export async function fetchVehicles(endpoint) {
     downloadVehicles.addEventListener("click", function () {
       createLink();
     });
+    return data;
   } catch (error) {
     console.error(error);
   }

@@ -20,6 +20,7 @@ export async function fetchTrips(endpoint) {
     downloadTrips.addEventListener("click", function () {
       createLink();
     });
+    return data;
   } catch (error) {
     console.error(error);
   }

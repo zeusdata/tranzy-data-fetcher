@@ -20,6 +20,7 @@ export async function fetchRoutes(endpoint) {
     downloadRoutes.addEventListener("click", function () {
       createLink();
     });
+    return data;
   } catch (error) {
     console.error(error);
   }
