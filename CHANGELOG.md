@@ -1,4 +1,16 @@
-## v0.1.0 - PROJECT NAME: TRANZY (JSON) DATA FETCHER - 28-04-2026
+## v0.1.0 — TRANZY JSON Data Fetcher (28-04-2026)
 
-- added folder structure
-- implemented `ui` design
+### Added
+- Initial folder structure
+- UI design implementation
+- API key validation interface
+- Agency selector (dynamic population from Tranzy)
+- Endpoint-based JSON download system
+
+### Fixed
+- Fixed issue where resetting `innerHTML` prevented selecting the first agency
+- Prevented generating empty files when no agency is selected
+
+### Improved
+- UI/UX refinements
+- Better user flow and feedback

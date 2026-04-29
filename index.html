@@ -15,9 +15,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
+    <nav class="m-t-10">
+      <ul class="nav-links">
+        <li><a href="index.html">[index]</a></li>
+        <li>
+          <a href="https://github.com/zeusdata/" target="_blank">[github]</a>
+        </li>
+        <li><a href="faq.html">[faq]</a></li>
+        <li><a href="api-structure.html">[api-structure]</a></li>
+        <li><a href="mailto:zeusdata.dev@gmail.com">[contact]</a></li>
+      </ul>
+    </nav>
+
     <p class="test m-t-10">TRANZY API [JSON] DATA FETCHER</p>
+
     <div class="container">
-      <div class="api-key-ui">
+      <div class="api-key-ui" id="api-key-ui">
         <div class="api-key-e-holder">
           <p class="p-text">API_KEY FROM TRANZY.AI</p>
           <input
@@ -27,30 +40,39 @@
           />
           <div class="func-status">
             <a class="p-text" id="check-api-key">CHECK API KEY()</a>
-            <p class="p-text" id="status-key">STATUS</p>
+            <p class="p-text" id="status-key"></p>
           </div>
         </div>
       </div>
 
-      <div class="select-ui">
+      <div class="select-ui" id="select-ui">
         <div class="select-e-holder">
           <p class="p-text">SELECT AN AGENCY</p>
-          <select class="select-agency" id="select-agency"></select>
-          <a class="p-text" id="generate-data"></a>
+          <select class="select-agency" id="select-agency">
+            <option>Choose an agency</option>
+          </select>
+          <div class="func-status">
+            <a class="p-text" id="generate-data"></a>
+            <p class="p-text" id="status-data"></p>
+          </div>
         </div>
       </div>
 
-      <div class="download-files-ui">
+      <div class="download-files-ui" id="download-files-ui">
         <div class="download-files-e-holder">
-          <p class="p-text">DOWNLOAD FILES</p>
-
+          <div class="func-status">
+            <p class="p-text">DOWNLOAD FILES</p>
+            <p class="p-text" id="status-download"></p>
+          </div>
           <div class="e-r">
             <div class="e-holder">
               <ul>
                 <li class="p-text">FETCH VEHICLES</li>
                 <li class="p-text-json">JSON FILE</li>
               </ul>
-              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+              <a class="download" id="download-vehicles"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
             </div>
           </div>
 
@@ -60,7 +82,9 @@
                 <li class="p-text">FETCH ROUTES</li>
                 <li class="p-text-json">JSON FILE</li>
               </ul>
-              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+              <a class="download" id="download-routes"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
             </div>
           </div>
 
@@ -70,7 +94,9 @@
                 <li class="p-text">FETCH TRIPS</li>
                 <li class="p-text-json">JSON FILE</li>
               </ul>
-              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+              <a class="download" id="download-trips"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
             </div>
           </div>
 
@@ -80,7 +106,9 @@
                 <li class="p-text">FETCH SHAPES</li>
                 <li class="p-text-json">JSON FILE</li>
               </ul>
-              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+              <a class="download" id="download-shapes"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
             </div>
           </div>
 
@@ -90,7 +118,9 @@
                 <li class="p-text">FETCH STOPS</li>
                 <li class="p-text-json">JSON FILE</li>
               </ul>
-              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+              <a class="download" id="download-stops"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
             </div>
           </div>
 
@@ -100,7 +130,9 @@
                 <li class="p-text">FETCH STOP TIMES</li>
                 <li class="p-text-json">JSON FILE</li>
               </ul>
-              <a class="download"><p class="p-download">DOWNLOAD</p></a>
+              <a class="download" id="download-stop-times"
+                ><p class="p-download">DOWNLOAD</p></a
+              >
             </div>
           </div>
         </div>
@@ -116,8 +148,13 @@
 
     <footer>
       <p class="footer-text">
-        TranzyDataFetcher v0.1.0 -
-        <a href="CHANGELOG.md" target="_blank">CHANGELOG</a>. project by
+        <a
+          href="https://github.com/zeusdata/tranzy-data-fetcher"
+          target="_blank"
+          >TranzyDataFetcher</a
+        >
+        v0.1.0 - <a href="CHANGELOG.md" target="_blank">CHANGELOG</a>. project
+        by
         <a href="https://zeusdata.dev" target="_blank">ZEUSDATA.DEV</a>
       </p>
     </footer>
