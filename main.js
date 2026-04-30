@@ -73,6 +73,8 @@ generateData.addEventListener("click", async function () {
     await fetchStops("stops");
     selectUi.style.border = "1px solid #67bf82";
     statusData.textContent = "DATA GENERATED!";
+    statusDownload.style.color = "#fff";
+    statusZip.style.color = "#fff";
     statusDownload.textContent = `FILES FOR AGENCY ID: ${selectedAgency}`;
     statusZip.textContent = `ZIP FILE FOR AGENCY ID: ${selectedAgency}`;
     setInterval(() => {
@@ -99,6 +101,7 @@ errorHandler.forEach((e) => {
       (selectedAgency === null && statusKey.textContent == "") ||
       statusKey.textContent == "ERROR:INVALID KEY!"
     ) {
+      statusDownload.textContent = "ERROR: FILES NOT GENERATED YET!";
       apiKeyUi.style.border = "1px solid crimson";
       selectUi.style.border = "1px solid crimson";
       downloadFilesUi.style.border = "1px solid crimson";
@@ -112,7 +115,7 @@ selectAgency.addEventListener("click", function () {
     statusKey.textContent == "ERROR:INVALID KEY!"
   ) {
     selectUi.style.border = "1px solid crimson";
-    statusData.textContent = "KEY NEEDED!";
+    statusData.textContent = "ERROR: KEY NEEDED!";
   }
 });
 //
@@ -138,7 +141,7 @@ save.addEventListener("click", async function () {
     (selectedAgency === null && statusKey.textContent == "") ||
     statusKey.textContent == "ERROR:INVALID KEY!"
   ) {
-    statusZip.textContent = "ERROR: FILES NOT GENERATED!";
+    statusZip.textContent = "ERROR: ZIP NOT GENERATED!";
     apiKeyUi.style.border = "1px solid crimson";
     saveUi.style.border = "1px solid crimson";
     selectUi.style.border = "1px solid crimson";

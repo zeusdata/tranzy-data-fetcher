@@ -85,6 +85,13 @@ body {
   font-weight: 400;
   font-size: var(--font-size);
 }
+.p-text-error {
+  color: crimson;
+  /* margin-bottom: 8px; */
+  font-family: RobotoMono;
+  font-weight: 400;
+  font-size: var(--font-size);
+}
 .api-key-ui,
 .select-ui,
 .save-ui {

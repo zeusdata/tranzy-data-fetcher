@@ -23,6 +23,7 @@ export async function fetchAgency(endpoint) {
     });
     if (data) {
       apiKeyUi.style.border = "1px solid #67bf82";
+      statusKey.style.color = "#67bf82";
       statusKey.textContent = "SUCCESS!";
       statusData.textContent = "";
       // generateData.textContent = "GENERATE DATA()";
@@ -33,6 +34,7 @@ export async function fetchAgency(endpoint) {
       selectedAgency = this.value;
       selectUi.style.border = "1px solid #F5B727";
       statusData.textContent = `SELECTED AGENCY ID: ${this.value}`;
+      statusData.style.color = "#fff";
 
       setInterval(() => {
         generateData.textContent = "GENERATE DATA()";

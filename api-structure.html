@@ -1,5 +1,40 @@
-<p>agency</p>
-<pre>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tranzy Data Fetcher</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-api-structure.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Tranzy JSON Data Fetcher" />
+    <meta
+      name="keywords"
+      content="tranzy, json, data, fetch, fetcher, zeusdata, api"
+    />
+    <meta name="author" content="Zeus Data" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="m-t-10">
+      <ul class="nav-links">
+        <li><a href="index.html">[index]</a></li>
+        <li>
+          <a href="https://github.com/zeusdata/" target="_blank">[github]</a>
+        </li>
+        <li><a href="faq.html">[faq]</a></li>
+        <li><a href="api-structure.html">[api-structure]</a></li>
+        <li><a href="mailto:zeusdata.dev@gmail.com">[contact]</a></li>
+      </ul>
+    </nav>
+
+    <p class="test m-t-10">TRANZY API [JSON] DATA FETCHER</p>
+
+    <div class="container">
+      <div class="json-ui" id="api-key-ui">
+        <div class="json-e-holder">
+          <p class="p-text">AGENCY</p>
+
+          <pre>
 [
   {
     "agency_id": 0,
@@ -12,9 +47,14 @@
     ]
   }
 ]
-</pre>
-<p>vehicles</p>
-<pre>
+</pre
+          >
+        </div>
+
+        <div class="json-e-holder">
+          <p class="p-text">VEHICLES</p>
+
+          <pre>
 [
   {
     "id": "1",
@@ -30,9 +70,14 @@
     "trip_id": "string"
   }
 ]
-</pre>
-<p>routes</p>
-<pre>
+</pre
+          >
+        </div>
+
+        <div class="json-e-holder">
+          <p class="p-text">ROUTES</p>
+
+          <pre>
 [
   {
     "route_id": 0,
@@ -44,9 +89,14 @@
     "route_desc": "string"
   }
 ]
-</pre>
-<p>trips</p>
-<pre>
+</pre
+          >
+        </div>
+
+        <div class="json-e-holder">
+          <p class="p-text">TRIPS</p>
+
+          <pre>
 [
   {
     "direction_id": 0,
@@ -59,9 +109,13 @@
     "bikes_allowed": 0
   }
 ]
-</pre>
-<p>shapes</p>
-<pre>
+</pre
+          >
+        </div>
+
+        <div class="json-e-holder">
+          <p class="p-text">SHAPES</p>
+          <pre>
 [
   {
     "shape_id": "string",
@@ -71,9 +125,13 @@
     "shape_dist_traveled": 0
   }
 ]</pre
->
-<p>stops</p>
-<pre>
+          >
+        </div>
+
+        <div class="json-e-holder">
+          <p class="p-text">STOPS</p>
+
+          <pre>
 [
   {
     "stop_id": 0,
@@ -85,9 +143,13 @@
     "stop_code": "string"
   }
 ]</pre
->
-<p>stop times</p>
-<pre>
+          >
+        </div>
+
+        <div class="json-e-holder">
+          <p class="p-text">STOP TIMES</p>
+
+          <pre>
 [
   {
     "trip_id": "string",
@@ -102,4 +164,23 @@
     "timepoint": 0
   }
 ]</pre
->
+          >
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-text">
+        <a
+          href="https://github.com/zeusdata/tranzy-data-fetcher"
+          target="_blank"
+          >TranzyDataFetcher</a
+        >
+        v0.2.0 - <a href="CHANGELOG.md" target="_blank">CHANGELOG</a>. project
+        by
+        <a href="https://zeusdata.dev" target="_blank">ZEUSDATA.DEV</a>
+      </p>
+    </footer>
+    <script src="src/jszip/jszip.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
