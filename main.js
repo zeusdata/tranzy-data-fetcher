@@ -154,7 +154,7 @@ save.addEventListener("click", async function () {
     const a = document.createElement("a");
 
     a.href = url;
-    a.download = "zeus_data_tranzty_files.zip";
+    a.download = `[zeusdata.dev]_${selectedAgency}_tranzy_files.zip`;
     a.click();
 
     setTimeout(() => URL.revokeObjectURL(url), 100);

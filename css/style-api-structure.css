@@ -114,7 +114,7 @@ body {
   height: auto;
   padding: 20px;
   box-sizing: border-box;
-  border: var(--border-test);
+  /* border: var(--border-test); */
 }
 footer {
   width: 100%;
