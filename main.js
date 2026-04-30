@@ -65,12 +65,19 @@ generateData.addEventListener("click", async function () {
     selectUi.style.border = "1px solid crimson";
   } else {
     createZip();
+    statusData.textContent = "Fetching vehicles...";
     await fetchVehicles("vehicles");
+    statusData.textContent = "Fetching routes...";
     await fetchRoutes("routes");
+    statusData.textContent = "Fetching trips...";
     await fetchTrips("trips");
+    statusData.textContent = "Fetching shapes...";
     await fetchShapes("shapes");
-    await fetchStopTimes("stop_times");
+    statusData.textContent = "Fetching stops...";
     await fetchStops("stops");
+    statusData.textContent = "Fetching stops...";
+    await fetchStopTimes("stop_times");
+
     selectUi.style.border = "1px solid #67bf82";
     statusData.textContent = "DATA GENERATED!";
     statusDownload.style.color = "#fff";
